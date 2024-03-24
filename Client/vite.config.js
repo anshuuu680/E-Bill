@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:5000/",
+        target: "e-bill-lilac.vercel.app/",
         changeOrigin: true,
         onProxyReq(proxyReq) {
           console.log(`Proxy request to: ${proxyReq.path}`);
